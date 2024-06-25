@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func addCat() {
-        
+        print("addCat")
     }
     
     func anotherCommitFunc() {
