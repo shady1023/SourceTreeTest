@@ -12,6 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func addCat() {
+        catMove()
+    }
+    
+    func catMove() {
         
     }
     
