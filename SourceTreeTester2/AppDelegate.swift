@@ -11,6 +11,10 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    func addCat() {
+        
+    }
+    
     func anotherCommitFunc() {
         print("This is another commit")
     }
