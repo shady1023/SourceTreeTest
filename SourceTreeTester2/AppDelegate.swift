@@ -11,22 +11,6 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    func addDog() {
-        
-    }
-    
-    func addCat() {
-        print("addCat")
-    }
-    
-    func anotherCommitFunc() {
-        print("This is another commit")
-    }
-    
-    func commitFunction() {
-        print("modify on github")
-    }
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
