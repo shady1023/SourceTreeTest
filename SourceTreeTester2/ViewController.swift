@@ -20,22 +20,41 @@ class ViewController: UIViewController {
         return view
     }()
     
+    lazy var blueView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .blue
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         addRedView()
+        addBlueView()
     }
 
     func addRedView() {
         view.addSubview(redView)
         NSLayoutConstraint.activate([
-            redView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
-            redView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            redView.topAnchor.constraint(equalTo: view.topAnchor, constant: 80),
             redView.heightAnchor.constraint(equalToConstant: 100),
-            redView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor)
+            redView.widthAnchor.constraint(equalToConstant: 300),
+            redView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
         
     }
 
+    func addBlueView() {
+        view.addSubview(blueView)
+        NSLayoutConstraint.activate([
+            blueView.topAnchor.constraint(equalTo: redView.bottomAnchor, constant: 20),
+            blueView.heightAnchor.constraint(equalToConstant: 100),
+            blueView.widthAnchor.constraint(equalToConstant: 300),
+            blueView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+        
+    }
+    
 }
 
