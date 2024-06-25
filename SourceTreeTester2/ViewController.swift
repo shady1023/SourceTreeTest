@@ -10,8 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    lazy var redView: UIView = {
-        let view = UIView()
+    lazy var redView: UILabel = {
+        let view = UILabel()
+        view.text = "test"
+        view.textColor = .white
+        view.textAlignment = .center
         view.backgroundColor = .red
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -31,6 +34,7 @@ class ViewController: UIViewController {
             redView.heightAnchor.constraint(equalToConstant: 100),
             redView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor)
         ])
+        
     }
 
 }
