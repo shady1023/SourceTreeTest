@@ -11,6 +11,10 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    func addDog() {
+        
+    }
+    
     func addCat() {
         
     }
